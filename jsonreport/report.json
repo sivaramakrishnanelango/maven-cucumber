@@ -1,0 +1,1456 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-04T13:50:49.174Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8965412456,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserstart()"
+            }
+          },
+          {
+            "result": {
+              "duration": 70608,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforescreenShot()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "To pass the valid username and invalid password",
+        "description": "",
+        "id": "to-validate-the-amazon-login-functionality;to-pass-the-valid-username-and-invalid-password",
+        "after": [
+          {
+            "result": {
+              "duration": 275634,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterscreenShot()"
+            }
+          },
+          {
+            "result": {
+              "duration": 315506228,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserclose()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2909466671,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "To launch google driver and hit the amazon url",
+            "match": {
+              "location": "amazon.to_launch_google_driver_and_hit_the_amazon_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1220944488,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "To pass the valid username in email field",
+            "match": {
+              "location": "amazon.to_pass_the_valid_username_in_email_field()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1018619647,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "To click the continue button",
+            "match": {
+              "location": "amazon.to_click_the_continue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7269930325,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "To pass the invalid password in password field",
+            "match": {
+              "location": "amazon.to_pass_the_invalid_password_in_password_field()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@features01"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "To validate the amazon login functionality",
+    "description": "",
+    "id": "to-validate-the-amazon-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/amazon.feature",
+    "tags": [
+      {
+        "name": "@features01",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5906367864,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "To launch the Chrome browser and hit the facebook url",
+            "match": {
+              "location": "fbTest.to_launch_the_Chrome_browser_and_hit_the_facebook_url()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-04T13:51:11.000Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2132641907,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserstart()"
+            }
+          },
+          {
+            "result": {
+              "duration": 107233,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforescreenShot()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "To validate the Invalid userName and Invalid password",
+        "description": "",
+        "id": "to-validate-the-facebook-login-functionality;to-validate-the-invalid-username-and-invalid-password",
+        "after": [
+          {
+            "result": {
+              "duration": 89865,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterscreenShot()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2226774716,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserclose()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 258332549,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "To pass the invalid userName to userName field",
+            "match": {
+              "location": "fbTest.to_pass_the_invalid_userName_to_userName_field(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "vijay@gmail.com",
+                  "surya@gmail.com",
+                  "vikram@gmail.com",
+                  "kamal@gmail.com",
+                  "rajini@gmail.com"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 90683984,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "To pass the invalid password to password field",
+            "match": {
+              "location": "fbTest.to_pass_the_invalid_password_to_password_field(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "nayan",
+                  "anushka",
+                  "samantha"
+                ]
+              },
+              {
+                "cells": [
+                  "trisha",
+                  "kajal",
+                  "kirhtishetty"
+                ]
+              },
+              {
+                "cells": [
+                  "priya",
+                  "bhavani",
+                  "sankar"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 61357652,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "To click the login button",
+            "match": {
+              "location": "fbTest.to_click_the_login_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@features02"
+          },
+          {
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3755028905,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "To launch the Chrome browser and hit the facebook url",
+            "match": {
+              "location": "fbTest.to_launch_the_Chrome_browser_and_hit_the_facebook_url()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-04T13:51:21.687Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3008407216,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserstart()"
+            }
+          },
+          {
+            "result": {
+              "duration": 52484,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforescreenShot()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "",
+        "description": "          To validate the username and password",
+        "id": "to-validate-the-facebook-login-functionality;;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 80802,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterscreenShot()"
+            }
+          },
+          {
+            "result": {
+              "duration": 501729509,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserclose()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 84128424,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "To pass the username \"srk@gmail.com\"to username field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"srk@gmail.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "facebookoutline.to_pass_the_username_to_username_field(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 92267181,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "To pass the password\"srk123\" to password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"srk123\"",
+                  "offset": 20
+                }
+              ],
+              "location": "facebookoutline.to_pass_the_password_to_password_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 69039914,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "To click the login button",
+            "match": {
+              "location": "fbTest.to_click_the_login_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@features02"
+          },
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4949001280,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "To launch the Chrome browser and hit the facebook url",
+            "match": {
+              "location": "fbTest.to_launch_the_Chrome_browser_and_hit_the_facebook_url()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-04T13:51:29.198Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2804527875,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserstart()"
+            }
+          },
+          {
+            "result": {
+              "duration": 81935,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforescreenShot()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "",
+        "description": "          To validate the username and password",
+        "id": "to-validate-the-facebook-login-functionality;;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 106100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterscreenShot()"
+            }
+          },
+          {
+            "result": {
+              "duration": 318966002,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserclose()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 88435490,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "To pass the username \"saranesh@gmail.com\"to username field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"saranesh@gmail.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "facebookoutline.to_pass_the_username_to_username_field(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 100493536,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "To pass the password\"saranesh123\" to password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"saranesh123\"",
+                  "offset": 20
+                }
+              ],
+              "location": "facebookoutline.to_pass_the_password_to_password_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65980753,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "To click the login button",
+            "match": {
+              "location": "fbTest.to_click_the_login_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@features02"
+          },
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6503954971,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "To launch the Chrome browser and hit the facebook url",
+            "match": {
+              "location": "fbTest.to_launch_the_Chrome_browser_and_hit_the_facebook_url()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-04T13:51:37.532Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3101037629,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserstart()"
+            }
+          },
+          {
+            "result": {
+              "duration": 97416,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforescreenShot()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "",
+        "description": "          To validate the username and password",
+        "id": "to-validate-the-facebook-login-functionality;;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 94017,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterscreenShot()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2480334643,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserclose()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 102008013,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "To pass the username \"gagigowtham@gmail.com\"to username field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"gagigowtham@gmail.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "facebookoutline.to_pass_the_username_to_username_field(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 109547549,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "To pass the password\"gagigowtham123\" to password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"gagigowtham123\"",
+                  "offset": 20
+                }
+              ],
+              "location": "facebookoutline.to_pass_the_password_to_password_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59801264,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "To click the login button",
+            "match": {
+              "location": "fbTest.to_click_the_login_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@features02"
+          },
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8048932975,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "To launch the Chrome browser and hit the facebook url",
+            "match": {
+              "location": "fbTest.to_launch_the_Chrome_browser_and_hit_the_facebook_url()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-04T13:51:49.966Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3199070472,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserstart()"
+            }
+          },
+          {
+            "result": {
+              "duration": 604885,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforescreenShot()"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "",
+        "description": "          To validate the username and password",
+        "id": "to-validate-the-facebook-login-functionality;;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 86466,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterscreenShot()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2176625174,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserclose()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 104366383,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "To pass the username \"surrender@gmail.com\"to username field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"surrender@gmail.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "facebookoutline.to_pass_the_username_to_username_field(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 107956045,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "To pass the password\"surrender123\" to password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"surrender123\"",
+                  "offset": 20
+                }
+              ],
+              "location": "facebookoutline.to_pass_the_password_to_password_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64540660,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "To click the login button",
+            "match": {
+              "location": "fbTest.to_click_the_login_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@features02"
+          },
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "To validate the FaceBook Login Functionality",
+    "description": "",
+    "id": "to-validate-the-facebook-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/facebook.feature",
+    "tags": [
+      {
+        "name": "@features02",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-04T13:52:03.770Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1883685824,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserstart()"
+            }
+          },
+          {
+            "result": {
+              "duration": 69475,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforescreenShot()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "To enter the twowheeler number",
+        "description": "",
+        "id": "to-check-the-insurance-amount-on-two-wheeler;to-enter-the-twowheeler-number",
+        "after": [
+          {
+            "result": {
+              "duration": 229947,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterscreenShot()"
+            }
+          },
+          {
+            "result": {
+              "duration": 6283504737,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserclose()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5754319053,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "To launch the chrome browser and hit the url",
+            "match": {
+              "location": "policybazzartwo.to_launch_the_chrome_browser_and_hit_the_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5415863835,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "To enter  the twowheeler insurance page",
+            "match": {
+              "location": "policybazzartwo.to_enter_the_twowheeler_insurance_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9333038442,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "To enter the vehicle number",
+            "match": {
+              "location": "policybazzartwo.to_enter_the_vehicle_number()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "then view prices of insurance",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@features03"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "To check the insurance amount on two wheeler",
+    "description": "",
+    "id": "to-check-the-insurance-amount-on-two-wheeler",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/policybazzar.feature",
+    "tags": [
+      {
+        "name": "@features03",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-04T13:52:33.012Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4830395187,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserstart()"
+            }
+          },
+          {
+            "result": {
+              "duration": 75517,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforescreenShot()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "To give the from and to details give",
+        "description": "",
+        "id": "to-check-the-availability-of-bus-service;to-give-the-from-and-to-details-give",
+        "after": [
+          {
+            "result": {
+              "duration": 66454,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterscreenShot()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2086509073,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserclose()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13249495269,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "To enter from area to reaching area with date",
+            "match": {
+              "location": "redbusbook.to_enter_from_area_to_reaching_area_with_date()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4108903395,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "To give the details from and to area",
+            "match": {
+              "location": "redbusbook.to_give_the_details_from_and_to_area()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 291282903,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "To enter the date details",
+            "match": {
+              "location": "redbusbook.to_enter_the_date_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63217616,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "To enter the search button",
+            "match": {
+              "location": "redbusbook.to_enter_the_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 437239,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "To select the bus and close the browser",
+            "match": {
+              "location": "redbusbook.to_select_the_bus_and_close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@features04"
+          },
+          {
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "To check the availability of bus service",
+    "description": "",
+    "id": "to-check-the-availability-of-bus-service",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/redbus.feature",
+    "tags": [
+      {
+        "name": "@features04",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@sanity",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7914021429,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "To launch the Chrome browser and hit the redbus url",
+            "match": {
+              "location": "redbusoutline.to_launch_the_Chrome_browser_and_hit_the_redbus_url()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-04T13:52:57.665Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3196796302,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserstart()"
+            }
+          },
+          {
+            "result": {
+              "duration": 76271,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforescreenShot()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "To validate the starting place   and  reaching place",
+        "description": "",
+        "id": "to-validate-the-redbus-webpage-functionality;to-validate-the-starting-place---and--reaching-place",
+        "after": [
+          {
+            "result": {
+              "duration": 109121,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterscreenShot()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2260827227,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserclose()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 102770349,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "To enter the starting place in from tab",
+            "match": {
+              "location": "redbusoutline.to_enter_the_starting_place_in_from_tab(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "from",
+                  "Nagercoil"
+                ]
+              },
+              {
+                "cells": [
+                  "from1",
+                  "Madurai"
+                ]
+              },
+              {
+                "cells": [
+                  "from2",
+                  "Coimbatore"
+                ]
+              },
+              {
+                "cells": [
+                  "from3",
+                  "Trichy"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 288556769,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "To enter the destination place in To tab",
+            "match": {
+              "location": "redbusoutline.to_enter_the_destination_place_in_To_tab(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "To",
+                  "To1",
+                  "To2"
+                ]
+              },
+              {
+                "cells": [
+                  "kumbakonam",
+                  "chidambaram",
+                  "cuddalore"
+                ]
+              },
+              {
+                "cells": [
+                  "pondy",
+                  "nagercoil",
+                  "salem"
+                ]
+              },
+              {
+                "cells": [
+                  "chennai",
+                  "vellore",
+                  "madurai"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2177049575,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "To enter the date in this tab",
+            "match": {
+              "location": "redbusoutline.to_enter_the_date_in_this_tab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 217864,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "To close thr browser",
+            "match": {
+              "location": "redbusoutline.to_close_thr_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@features05"
+          },
+          {
+            "name": "@features06"
+          },
+          {
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "To validate the Redbus webpage Functionality",
+    "description": "",
+    "id": "to-validate-the-redbus-webpage-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/redbusoutline.feature",
+    "tags": [
+      {
+        "name": "@features05",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@features06",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 14
+        }
+      },
+      {
+        "name": "@sanity",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-04T13:53:13.613Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1815499243,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserstart()"
+            }
+          },
+          {
+            "result": {
+              "duration": 180484,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforescreenShot()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "To validate the mobile no used as login",
+        "description": "",
+        "id": "to-validate-the-snapdeal-login;to-validate-the-mobile-no-used-as-login",
+        "after": [
+          {
+            "result": {
+              "duration": 66455,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterscreenShot()"
+            }
+          },
+          {
+            "result": {
+              "duration": 133991381,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserclose()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6538743388,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "To google chrome driver launch and hit  the snapdeal url launch",
+            "match": {
+              "location": "snapdeal.to_google_chrome_driver_launch_and_hit_the_snapdeal_url_launch()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 163580131,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "To give the invalid mobileno",
+            "match": {
+              "location": "snapdeal.to_give_the_invalid_mobileno()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 86581567,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "To click the login btn",
+            "match": {
+              "location": "snapdeal.to_click_the_login_btn()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@features06"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "To validate the snapdeal login",
+    "description": "",
+    "id": "to-validate-the-snapdeal-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/snapdeal.feature",
+    "tags": [
+      {
+        "name": "@features06",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

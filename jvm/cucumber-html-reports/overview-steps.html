@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Amazon,Flipkart,Redbus,Snapdeal,policybazzar</td>
+            <td>15 Jun 2022, 08:36</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">Hooks.afterscreenShot()</td>
+              <td>10</td>
+              <td class="duration" data-value="120486">0.000</td>
+              <td class="duration" data-value="120486">0.000</td>
+              <td class="duration" data-value="1204861">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.beforescreenShot()</td>
+              <td>10</td>
+              <td class="duration" data-value="141630">0.000</td>
+              <td class="duration" data-value="141630">0.000</td>
+              <td class="duration" data-value="1416308">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.browserclose()</td>
+              <td>10</td>
+              <td class="duration" data-value="1878476869">1.878</td>
+              <td class="duration" data-value="1878476869">6.283</td>
+              <td class="duration" data-value="18784768690">18.784</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.browserstart()</td>
+              <td>10</td>
+              <td class="duration" data-value="3493747411">3.493</td>
+              <td class="duration" data-value="3493747411">8.965</td>
+              <td class="duration" data-value="34937474111">34.937</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">amazon.to_click_the_continue_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="1018619647">1.018</td>
+              <td class="duration" data-value="1018619647">1.018</td>
+              <td class="duration" data-value="1018619647">1.018</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">amazon.to_launch_google_driver_and_hit_the_amazon_url()</td>
+              <td>1</td>
+              <td class="duration" data-value="2909466671">2.909</td>
+              <td class="duration" data-value="2909466671">2.909</td>
+              <td class="duration" data-value="2909466671">2.909</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">amazon.to_pass_the_invalid_password_in_password_field()</td>
+              <td>1</td>
+              <td class="duration" data-value="7269930325">7.269</td>
+              <td class="duration" data-value="7269930325">7.269</td>
+              <td class="duration" data-value="7269930325">7.269</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">amazon.to_pass_the_valid_username_in_email_field()</td>
+              <td>1</td>
+              <td class="duration" data-value="1220944488">1.220</td>
+              <td class="duration" data-value="1220944488">1.220</td>
+              <td class="duration" data-value="1220944488">1.220</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">facebookoutline.to_pass_the_password_to_password_field(String)</td>
+              <td>4</td>
+              <td class="duration" data-value="102566077">0.102</td>
+              <td class="duration" data-value="102566077">0.109</td>
+              <td class="duration" data-value="410264311">0.410</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">facebookoutline.to_pass_the_username_to_username_field(String)</td>
+              <td>4</td>
+              <td class="duration" data-value="94734577">0.094</td>
+              <td class="duration" data-value="94734577">0.104</td>
+              <td class="duration" data-value="378938310">0.378</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">fbTest.to_click_the_login_button()</td>
+              <td>5</td>
+              <td class="duration" data-value="64144048">0.064</td>
+              <td class="duration" data-value="64144048">0.069</td>
+              <td class="duration" data-value="320720243">0.320</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">fbTest.to_launch_the_Chrome_browser_and_hit_the_facebook_url()</td>
+              <td>5</td>
+              <td class="duration" data-value="5832657199">5.832</td>
+              <td class="duration" data-value="5832657199">8.048</td>
+              <td class="duration" data-value="29163285995">29.163</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">fbTest.to_pass_the_invalid_password_to_password_field(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="90683984">0.090</td>
+              <td class="duration" data-value="90683984">0.090</td>
+              <td class="duration" data-value="90683984">0.090</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">fbTest.to_pass_the_invalid_userName_to_userName_field(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="258332549">0.258</td>
+              <td class="duration" data-value="258332549">0.258</td>
+              <td class="duration" data-value="258332549">0.258</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">policybazzartwo.to_enter_the_twowheeler_insurance_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="5415863835">5.415</td>
+              <td class="duration" data-value="5415863835">5.415</td>
+              <td class="duration" data-value="5415863835">5.415</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">policybazzartwo.to_enter_the_vehicle_number()</td>
+              <td>1</td>
+              <td class="duration" data-value="9333038442">9.333</td>
+              <td class="duration" data-value="9333038442">9.333</td>
+              <td class="duration" data-value="9333038442">9.333</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">policybazzartwo.to_launch_the_chrome_browser_and_hit_the_url()</td>
+              <td>1</td>
+              <td class="duration" data-value="5754319053">5.754</td>
+              <td class="duration" data-value="5754319053">5.754</td>
+              <td class="duration" data-value="5754319053">5.754</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">redbusbook.to_enter_from_area_to_reaching_area_with_date()</td>
+              <td>1</td>
+              <td class="duration" data-value="13249495269">13.249</td>
+              <td class="duration" data-value="13249495269">13.249</td>
+              <td class="duration" data-value="13249495269">13.249</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">redbusbook.to_enter_the_date_details()</td>
+              <td>1</td>
+              <td class="duration" data-value="291282903">0.291</td>
+              <td class="duration" data-value="291282903">0.291</td>
+              <td class="duration" data-value="291282903">0.291</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">redbusbook.to_enter_the_search_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="63217616">0.063</td>
+              <td class="duration" data-value="63217616">0.063</td>
+              <td class="duration" data-value="63217616">0.063</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">redbusbook.to_give_the_details_from_and_to_area()</td>
+              <td>1</td>
+              <td class="duration" data-value="4108903395">4.108</td>
+              <td class="duration" data-value="4108903395">4.108</td>
+              <td class="duration" data-value="4108903395">4.108</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">redbusbook.to_select_the_bus_and_close_the_browser()</td>
+              <td>1</td>
+              <td class="duration" data-value="437239">0.000</td>
+              <td class="duration" data-value="437239">0.000</td>
+              <td class="duration" data-value="437239">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">redbusoutline.to_close_thr_browser()</td>
+              <td>1</td>
+              <td class="duration" data-value="217864">0.000</td>
+              <td class="duration" data-value="217864">0.000</td>
+              <td class="duration" data-value="217864">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">redbusoutline.to_enter_the_date_in_this_tab()</td>
+              <td>1</td>
+              <td class="duration" data-value="2177049575">2.177</td>
+              <td class="duration" data-value="2177049575">2.177</td>
+              <td class="duration" data-value="2177049575">2.177</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">redbusoutline.to_enter_the_destination_place_in_To_tab(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="288556769">0.288</td>
+              <td class="duration" data-value="288556769">0.288</td>
+              <td class="duration" data-value="288556769">0.288</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">redbusoutline.to_enter_the_starting_place_in_from_tab(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="102770349">0.102</td>
+              <td class="duration" data-value="102770349">0.102</td>
+              <td class="duration" data-value="102770349">0.102</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">redbusoutline.to_launch_the_Chrome_browser_and_hit_the_redbus_url()</td>
+              <td>1</td>
+              <td class="duration" data-value="7914021429">7.914</td>
+              <td class="duration" data-value="7914021429">7.914</td>
+              <td class="duration" data-value="7914021429">7.914</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">snapdeal.to_click_the_login_btn()</td>
+              <td>1</td>
+              <td class="duration" data-value="86581567">0.086</td>
+              <td class="duration" data-value="86581567">0.086</td>
+              <td class="duration" data-value="86581567">0.086</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">snapdeal.to_give_the_invalid_mobileno()</td>
+              <td>1</td>
+              <td class="duration" data-value="163580131">0.163</td>
+              <td class="duration" data-value="163580131">0.163</td>
+              <td class="duration" data-value="163580131">0.163</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">snapdeal.to_google_chrome_driver_launch_and_hit_the_snapdeal_url_launch()</td>
+              <td>1</td>
+              <td class="duration" data-value="6538743388">6.538</td>
+              <td class="duration" data-value="6538743388">6.538</td>
+              <td class="duration" data-value="6538743388">6.538</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>30</td>
+            <td>80</td>
+            <td class="duration">1.903</td>
+            <td class="duration">34.937</td>
+            <td class="duration">2:32.254</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
